@@ -30,18 +30,18 @@ export default function Footer() {
 
               <div className="space-y-3">
                 <a
-                  href="mailto:contact@seadocs.io"
+                  href="mailto:ason@certifie.io"
                   className="flex items-center gap-2 text-white/60 hover:text-[#1BBE7C] transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span className="text-sm">contact@seadocs.io</span>
+                  <span className="text-sm">ason@certifie.io</span>
                 </a>
                 <div className="flex items-start gap-2 text-white/60">
                   <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                   <span className="text-sm leading-relaxed">
-                    Seoul, South Korea
+                    Seongnam, South Korea
                     <br />
-                    San Francisco, USA
+                    New York, USA
                   </span>
                 </div>
               </div>
