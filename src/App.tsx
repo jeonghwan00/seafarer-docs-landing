@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useSmoothScroll } from './hooks/useSmoothScroll';
+import { LanguageProvider } from './contexts/LanguageContext';
+import Hero from './components/Hero';
+import Problem from './components/Problem';
+import HowItWorks from './components/HowItWorks';
+import Features from './components/Features';
+import Testimonials from './components/Testimonials';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 function App() {
+  useSmoothScroll();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-[#0B1220] overflow-x-hidden">
+        <LanguageSwitcher />
+        <Hero />
+        <Problem />
+        <HowItWorks />
+        <Features />
+        <Testimonials />
+        <CTA />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 
