@@ -39,20 +39,20 @@ export default function Hero() {
 
         {/* Headline */}
         <motion.h1
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+          className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-4 md:mb-6 leading-[1.15] px-4"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <span className="block">{t.hero.title}</span>
-          <span className="bg-gradient-to-r from-[#1BBE7C] to-[#15a068] bg-clip-text text-transparent">
+          <span className="block mb-2 drop-shadow-lg">{t.hero.title}</span>
+          <span className="bg-gradient-to-r from-[#1BBE7C] to-[#15a068] bg-clip-text text-transparent drop-shadow-lg">
             {t.hero.highlight}
           </span>
         </motion.h1>
 
         {/* Subheadline */}
         <motion.p
-          className="text-lg md:text-xl text-white/70 mb-12 max-w-3xl mx-auto leading-relaxed"
+          className="text-[1.05rem] md:text-xl text-white/80 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-4 drop-shadow-md"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -62,18 +62,18 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mb-12 md:mb-16 px-4 w-full max-w-md sm:max-w-none mx-auto"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <motion.button
-            className="group relative px-8 py-4 bg-[#1BBE7C] text-white rounded-2xl font-semibold text-lg flex items-center gap-2 overflow-hidden"
+            className="group relative px-6 sm:px-8 py-3.5 sm:py-4 bg-[#1BBE7C] text-white rounded-2xl font-semibold text-base sm:text-lg flex items-center justify-center gap-2 overflow-hidden"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
             <span className="relative z-10">{t.hero.cta.primary}</span>
-            <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-[#1BBE7C] to-[#15a068]"
               initial={{ x: '-100%' }}
@@ -83,41 +83,41 @@ export default function Hero() {
           </motion.button>
 
           <motion.button
-            className="group px-8 py-4 bg-white/5 backdrop-blur-xl border border-white/10 text-white rounded-2xl font-semibold text-lg flex items-center gap-2"
+            className="group px-6 sm:px-8 py-3.5 sm:py-4 bg-white/5 backdrop-blur-xl border border-white/10 text-white rounded-2xl font-semibold text-base sm:text-lg flex items-center justify-center gap-2"
             whileHover={{ scale: 1.02, backgroundColor: 'rgba(255,255,255,0.1)' }}
             whileTap={{ scale: 0.98 }}
           >
-            <Play className="w-5 h-5" />
+            <Play className="w-4 h-4 sm:w-5 sm:h-5" />
             <span>{t.hero.cta.demo}</span>
           </motion.button>
         </motion.div>
 
         {/* Stats */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-8 text-white/60"
+          className="grid grid-cols-3 sm:flex sm:flex-row items-center justify-center gap-4 sm:gap-8 text-white/60 px-4 max-w-2xl mx-auto"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <div className="flex items-center gap-2">
-            <div className="w-12 h-12 rounded-full bg-[#1BBE7C]/20 flex items-center justify-center">
-              <span className="text-[#1BBE7C] font-bold">85%</span>
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
+            <div className="w-14 h-14 sm:w-12 sm:h-12 rounded-full bg-[#1BBE7C]/20 flex items-center justify-center shrink-0">
+              <span className="text-[#1BBE7C] font-bold text-base sm:text-base">85%</span>
             </div>
-            <span className="text-sm">{t.hero.stats.savings}</span>
+            <span className="text-xs sm:text-sm leading-tight">{t.hero.stats.savings}</span>
           </div>
           <div className="hidden sm:block w-px h-8 bg-white/10" />
-          <div className="flex items-center gap-2">
-            <div className="w-12 h-12 rounded-full bg-[#1BBE7C]/20 flex items-center justify-center">
-              <span className="text-[#1BBE7C] font-bold text-xs">99.9%</span>
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
+            <div className="w-14 h-14 sm:w-12 sm:h-12 rounded-full bg-[#1BBE7C]/20 flex items-center justify-center shrink-0">
+              <span className="text-[#1BBE7C] font-bold text-xs sm:text-xs">99.9%</span>
             </div>
-            <span className="text-sm">{t.hero.stats.accuracy}</span>
+            <span className="text-xs sm:text-sm leading-tight">{t.hero.stats.accuracy}</span>
           </div>
           <div className="hidden sm:block w-px h-8 bg-white/10" />
-          <div className="flex items-center gap-2">
-            <div className="w-12 h-12 rounded-full bg-[#1BBE7C]/20 flex items-center justify-center">
-              <span className="text-[#1BBE7C] font-bold">5min</span>
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
+            <div className="w-14 h-14 sm:w-12 sm:h-12 rounded-full bg-[#1BBE7C]/20 flex items-center justify-center shrink-0">
+              <span className="text-[#1BBE7C] font-bold text-base sm:text-base">5min</span>
             </div>
-            <span className="text-sm">{t.hero.stats.setup}</span>
+            <span className="text-xs sm:text-sm leading-tight">{t.hero.stats.setup}</span>
           </div>
         </motion.div>
       </div>
