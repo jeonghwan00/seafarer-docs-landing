@@ -17,4 +17,10 @@
   html {
     scroll-behavior: auto;
   }
+
+  /* 한국어 단어가 줄바꿈에서 잘리지 않도록 */
+  h1, h2, h3, h4, h5, h6, p, span, a, button {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
 }
