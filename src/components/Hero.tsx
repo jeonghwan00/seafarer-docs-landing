@@ -9,7 +9,7 @@ export default function Hero() {
       {/* 배경 */}
       <motion.div
         className="absolute inset-0 z-0"
-        initial={{ scale: 1 }}
+        initial={{ scale: 1.0 }}
         animate={{ scale: 1.08 }}
         transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
       >
