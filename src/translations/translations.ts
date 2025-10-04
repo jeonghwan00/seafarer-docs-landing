@@ -16,14 +16,14 @@ export const translations = {
       },
     },
     problem: {
-      title: '수동 문서 처리의',
-      highlight: '숨겨진 비용',
-      subtitle: '비효율과 오류는 곧 비용입니다. 자동화 전환은 정확성과 속도를 동시에 높입니다.',
+      title: '아직도 수십 장의 서류를',
+      highlight: '수기로 타이핑하고 있나요?',
+      subtitle: '사진만 올리세요. 나머지는 AI가 100% 자동으로 처리합니다.',
       cards: [
         {
           title: '수동 입력으로 낭비되는 시간',
-          description: '스캔본에서 데이터를 직접 옮기느라 핵심 인력이 하루의 절반을 잃습니다.',
-          impact: '인력 비용 ↑ · 처리 지연',
+          description: '직원이 하루 종일 단순 타이핑 작업에 묶여 정작 중요한 업무는 뒷전입니다.',
+          impact: '인건비 낭비 · 업무 지연',
         },
         {
           title: '만료·갱신 추적의 혼란',
@@ -123,7 +123,7 @@ export const translations = {
       highlight: '첫 번째 기업이 되세요',
       description: '얼리 액세스 신청 시 맞춤 온보딩, 우선 지원, 평생 할인 혜택 제공.',
       button: '얼리 액세스 신청',
-      limited: '2025년 1분기 한정 인원',
+      limited: '2025년 4분기 한정 인원',
     },
     footer: {
       description: 'AI 기반 선원 문서 자동화로 해운 산업의 워크플로우를 혁신합니다.',
@@ -179,14 +179,14 @@ export const translations = {
       },
     },
     problem: {
-      title: 'The Hidden Costs of',
-      highlight: 'Manual Documentation',
-      subtitle: 'Inefficiency and errors equal costs. Automation delivers accuracy and speed simultaneously.',
+      title: 'Still manually typing',
+      highlight: 'dozens of documents?',
+      subtitle: 'Just upload photos. AI handles 100% of the rest automatically.',
       cards: [
         {
           title: 'Time Wasted on Manual Entry',
-          description: 'Your key personnel lose half their day manually transferring data from scanned documents.',
-          impact: 'Labor Costs ↑ · Processing Delays',
+          description: 'Staff spend all day on repetitive typing tasks while critical work gets neglected.',
+          impact: 'Wasted Labor · Delays',
         },
         {
           title: 'Expiration Tracking Chaos',
@@ -286,7 +286,7 @@ export const translations = {
       highlight: 'Transform Your Workflow',
       description: 'Early access includes custom onboarding, priority support, and lifetime discount benefits.',
       button: 'Request Early Access',
-      limited: 'Limited Spots for Q1 2025',
+      limited: 'Limited Spots for Q4 2025',
     },
     footer: {
       description: 'Revolutionizing maritime industry workflows with AI-powered seafarer document automation.',
@@ -342,14 +342,14 @@ export const translations = {
       },
     },
     problem: {
-      title: '手作業による',
-      highlight: '隠れたコスト',
-      subtitle: '非効率とミスはコストです。自動化は正確性とスピードを同時に実現します。',
+      title: 'まだ何十枚もの書類を',
+      highlight: '手入力していませんか？',
+      subtitle: '写真をアップするだけ。残りはAIが100%自動処理します。',
       cards: [
         {
           title: '手入力で失われる時間',
-          description: 'スキャン文書からのデータ移行で、重要な人材が1日の半分を失っています。',
-          impact: '人件費 ↑ · 処理遅延',
+          description: 'スタッフが一日中単純なタイピング作業に追われ、重要な業務が後回しになります。',
+          impact: '人件費の無駄 · 遅延',
         },
         {
           title: '期限管理の混乱',
@@ -449,7 +449,7 @@ export const translations = {
       highlight: '最初の企業になりませんか',
       description: 'アーリーアクセス申請で、カスタムオンボーディング、優先サポート、生涯割引特典を提供します。',
       button: 'アーリーアクセス申請',
-      limited: '2025年第1四半期限定枠',
+      limited: '2025年第4四半期限定枠',
     },
     footer: {
       description: 'AI基盤の船員文書自動化で海運業界のワークフローを革新します。',

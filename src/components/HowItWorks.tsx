@@ -1,24 +1,14 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Upload, Zap, CheckCircle, Send } from 'lucide-react';
-import { useRef } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const icons = [Upload, Zap, CheckCircle, Send];
 
 export default function HowItWorks() {
   const { t } = useLanguage();
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start end', 'end start'],
-  });
-
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 1.05]);
-  const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.5, 1, 1, 0.5]);
 
   return (
     <section
-      ref={containerRef}
       className="relative py-24 md:py-32 px-6"
       aria-labelledby="how-heading"
     >
@@ -49,7 +39,7 @@ export default function HowItWorks() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-start">
+        <div className="max-w-4xl mx-auto">
           {/* Steps */}
           <ol className="space-y-6 md:space-y-8">
             {t.howItWorks.steps.map((step, index) => {
@@ -102,36 +92,6 @@ export default function HowItWorks() {
               );
             })}
           </ol>
-
-          {/* Sticky preview */}
-          <motion.div className="sticky top-24 md:top-32" style={{ scale, opacity }}>
-            <div className="relative rounded-3xl overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 p-6 md:p-8">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1BBE7C]/10 to-transparent" />
-              <div className="relative z-10">
-                {/* Window mock */}
-                <div className="bg-[#0B1220] rounded-2xl p-5 md:p-6 mb-4">
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-3 h-3 rounded-full bg-red-500" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                    <div className="w-3 h-3 rounded-full bg-green-500" />
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="h-8 bg-white/5 rounded-lg animate-pulse" />
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="h-24 bg-white/5 rounded-lg" />
-                      <div className="h-24 bg-white/5 rounded-lg" />
-                    </div>
-                    <div className="h-12 bg-gradient-to-r from-[#1BBE7C]/20 to-transparent rounded-lg" />
-                  </div>
-                </div>
-
-                <div className="text-center">
-                  <p className="text-white/40 text-xs md:text-sm">SeaDocs Dashboard</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>

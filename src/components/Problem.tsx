@@ -17,10 +17,10 @@ export default function Problem() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 id="problem-heading" className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+          <h2 id="problem-heading" className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight max-w-5xl mx-auto">
             {t.problem.title}
-            <br className="md:hidden" />
-            <span className="md:ml-2 bg-gradient-to-r from-[#1BBE7C] to-[#15a068] bg-clip-text text-transparent">
+            <br />
+            <span className="bg-gradient-to-r from-[#1BBE7C] to-[#15a068] bg-clip-text text-transparent">
               {t.problem.highlight}
             </span>
           </h2>
