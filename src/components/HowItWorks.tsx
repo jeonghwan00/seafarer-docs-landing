@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { Upload, Zap, CheckCircle, Send } from 'lucide-react';
+import { Upload, Zap, FileText, Bell } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
-const icons = [Upload, Zap, CheckCircle, Send];
+const icons = [Upload, Zap, FileText, Bell];
 
 export default function HowItWorks() {
   const { t } = useLanguage();

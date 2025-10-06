@@ -1,39 +1,39 @@
 export const translations = {
   ko: {
     hero: {
-      badge: '해운 전문가들이 신뢰하는 솔루션',
-      title: '서류 작업, AI에 맡기고',
-      highlight: '비용과 시간을 획기적으로 절약하세요',
-      description: '복잡한 수기 입력을 자동화하고, 인적 오류를 제거하여 운영 효율을 극대화합니다.',
+      badge: '선원 서류 자동화 솔루션',
+      title: '여전히 손글씨로 작성된 선원 서류들을,',
+      highlight: '누군가는 보고 또 한 줄씩 타이핑하고 있습니다.',
+      description: 'SeaDocs는 AI가 이력서, 선원일지, 경력증명서 등 선원 문서를 자동으로 인식하고 입력 없이 완성합니다. 수기 입력을 멈추고, 자동화를 시작하세요.',
       cta: {
-        primary: '얼리 액세스 신청',
-        demo: '2분 데모 보기',
+        primary: '얼리 액세스 신청하기',
+        demo: '데모 신청하기',
       },
       stats: {
-        savings: '비용·시간 절감',
-        accuracy: '완벽한 정확도',
-        setup: '설정 완료 시간',
+        savings: '문서 처리 속도',
+        accuracy: '제출 반려율 감소',
+        setup: '인건비 절감 효과',
       },
     },
     problem: {
-      title: '아직도 수십 장의 서류를',
-      highlight: '수기로 타이핑하고 있나요?',
-      subtitle: '사진만 올리세요. 나머지는 AI가 100% 자동으로 처리합니다.',
+      title: '선원 모집 및 송출,',
+      highlight: '수기 타이핑이 최선일까요?',
+      subtitle: '',
       cards: [
         {
-          title: '수동 입력으로 낭비되는 시간',
-          description: '직원이 하루 종일 단순 타이핑 작업에 묶여 정작 중요한 업무는 뒷전입니다.',
-          impact: '인건비 낭비 · 업무 지연',
+          title: '과도한 서류 입력 시간',
+          description: '선원 100명 기준 약 5,000장의 문서를 일일이 타이핑합니다. 단순 입력만으로 하루 대부분의 시간이 소모됩니다.',
+          impact: '시간 낭비',
         },
         {
-          title: '만료·갱신 추적의 혼란',
-          description: '스프레드시트 관리로 인증서 갱신을 놓쳐 계약 리스크가 커집니다.',
-          impact: '규정 미준수 위험',
+          title: '입력 전담 인력 및 인건비 증가',
+          description: '서류 입력을 전담하는 인력이 따로 필요하며, 인건비가 그대로 증가하는 비효율을 초래합니다.',
+          impact: '비용 증가',
         },
         {
-          title: '제출 오류와 거부',
-          description: '사소한 오타 하나가 제출 반려로 이어져 선원 배치가 수주 지연됩니다.',
-          impact: '운항 차질 · 매출 손실',
+          title: '휴먼 에러로 인한 송출 지연',
+          description: '손글씨 입력 실수는 선원 송출 전체 프로세스를 지연시키고 리스크를 키웁니다.',
+          impact: '프로세스 지연',
         },
       ],
     },
@@ -44,9 +44,9 @@ export const translations = {
       description: '수작업을 자동화하고, 오류를 제거하며, 팀이 전략 업무에 집중하도록 설계했습니다.',
       cards: [
         {
-          title: '규제 준수 예측',
-          description: '승인·컴플라이언스 리스크를 사전에 탐지하고 거부를 예방합니다.',
-          badge: 'Accuracy',
+          title: 'AI 자동 추출 및 검증',
+          description: 'OCR과 LLM 기반으로 선원 서류의 핵심 정보를 추출하고 규정 준수 여부를 자동으로 검증합니다.',
+          badge: 'AI',
         },
         {
           title: '글로벌 요건 대응',
@@ -61,54 +61,72 @@ export const translations = {
         {
           title: '실시간 동기화',
           description: '기존 HR/급여/크루 관리 시스템과 양방향 통합으로 데이터 일관성을 보장합니다.',
-          badge: 'Automation',
+          badge: 'Integration',
+        },
+      ],
+    },
+    poc: {
+      title: 'JSM PoC',
+      highlight: '검증된 결과',
+      cards: [
+        {
+          title: '문서 처리 속도 80% 향상',
+          description: '입력 시간 6시간 → 1.2시간',
+        },
+        {
+          title: '제출 반려율 90% 감소',
+          description: '수기 오류 제거로 송출 지연 차단',
+        },
+        {
+          title: '9명분 인건비 절감',
+          description: '입력 전담 인력 자동화로 대체',
         },
       ],
     },
     howItWorks: {
-      subtitle: 'Automation • Accuracy • Cost Efficiency • Strategic Focus',
-      title: '4단계로 업로드부터',
-      highlight: '제출까지 자동화',
-      description: '수작업을 줄이고 오류를 제거해, 팀이 전략 업무에 집중하도록 설계했습니다.',
+      subtitle: '한 번의 업로드로 선원 서류 업무가 끝납니다',
+      title: 'SeaDocs의 4단계',
+      highlight: '자동화 워크플로우',
+      description: '서류 자동 인식, 검증, 정리 기능을 통해 입력부터 문서 생성까지 모든 과정을 한 번에 처리합니다.',
       steps: [
         {
-          title: '이미지만 업로드',
-          description: '드래그 앤 드롭으로 시작하세요.',
-          badge: 'Automation',
+          title: '서류 업로드',
+          description: '파일만 드래그 앤 드롭',
+          badge: '01',
         },
         {
-          title: 'AI 자동 추출',
-          description: 'OCR·필드 매핑·표준화를 즉시 처리합니다.',
-          badge: 'Accuracy',
+          title: 'AI 자동 추출 및 검증',
+          description: '핵심 정보 추출 및 규정 준수 확인',
+          badge: '02',
         },
         {
-          title: '규정 준수 검증',
-          description: '국가·선사 요건을 실시간으로 검사합니다.',
-          badge: 'Compliance',
+          title: '문서 생성',
+          description: '최종 문서/양식 자동 생성',
+          badge: '03',
         },
         {
-          title: '제출·내보내기',
-          description: '원클릭으로 PDF/양식 생성 및 전송합니다.',
-          badge: 'Delivery',
+          title: '만료 관리',
+          description: '갱신 알림 및 추적',
+          badge: '04',
         },
       ],
     },
     testimonials: {
-      title: '고객의',
-      subtitle: '목소리',
-      description: '도입 직후의 시간 절감과 오류 감소, 그리고 즉각적인 ROI를 직접 확인하세요.',
+      title: '권위와 신뢰:',
+      subtitle: '정부 기관 연구 및 국제 표준 준수',
+      description: '',
       cards: [
         {
-          quote: '문서 처리 시간이 6시간에서 30분으로 단축되었습니다. 투자 대비 수익이 즉각적이었어요.',
-          author: '김민수',
-          role: '운영 매니저',
-          company: '한국 해운 서비스',
+          quote: 'SeaDocs는 중소벤처기업부·한국인터넷진흥원·개인정보보호위원회 등 정부 기관의 검증을 거친 신뢰할 수 있는 솔루션입니다.',
+          author: '',
+          role: '정부 기관 인증',
+          company: '중소벤처기업부 · 한국인터넷진흥원 · 개인정보보호위원회',
         },
         {
-          quote: '해운 규정을 완벽히 이해하는 솔루션입니다. 자동 검증으로 제출 오류를 완전히 예방했습니다.',
-          author: '이지은',
-          role: '선원 관리 책임자',
-          company: '퍼시픽 함대 관리',
+          quote: 'IMMAJ 국제 표준을 준수하여 글로벌 해운 규정에 완벽히 대응하며, 안전하고 규정에 맞는 문서 처리를 보장합니다.',
+          author: '',
+          role: '국제 표준 준수',
+          company: 'IMMAJ Compliance',
         },
       ],
       stats: [
@@ -118,11 +136,14 @@ export const translations = {
       ],
     },
     cta: {
-      badge: '혁신의 시작',
-      title: '문서 워크플로우를 혁신할',
-      highlight: '첫 번째 기업이 되세요',
-      description: '얼리 액세스 신청 시 맞춤 온보딩, 우선 지원, 평생 할인 혜택 제공.',
-      button: '얼리 액세스 신청',
+      badge: '',
+      title: '자동화를',
+      highlight: '시작할 때입니다',
+      description: '수기 입력을 멈추고, 자동화를 시작하세요. 실제 문서로 테스트하여 입력 없이도 완벽한 결과를 직접 확인해보세요.',
+      buttons: {
+        primary: '얼리 액세스 신청하기',
+        demo: '데모 신청하기',
+      },
       limited: '2025년 4분기 한정 인원',
     },
     footer: {
@@ -170,7 +191,7 @@ export const translations = {
       description: 'Automate complex manual data entry, eliminate human error, and maximize your operational efficiency.',
       cta: {
         primary: 'Request Early Access',
-        demo: 'Watch 2-Min Demo',
+        demo: 'Request Demo',
       },
       stats: {
         savings: 'Cost & Time Savings',
@@ -207,9 +228,9 @@ export const translations = {
       description: 'Designed to automate manual work, eliminate errors, and let your team focus on strategic tasks.',
       cards: [
         {
-          title: 'Compliance Prediction',
-          description: 'Detect approval and compliance risks in advance to prevent rejections.',
-          badge: 'Accuracy',
+          title: 'AI Auto-Extraction & Verification',
+          description: 'OCR and LLM-based extraction of key information from seafarer documents with automatic compliance verification.',
+          badge: 'AI',
         },
         {
           title: 'Global Requirements',
@@ -224,54 +245,72 @@ export const translations = {
         {
           title: 'Real-Time Sync',
           description: 'Bidirectional integration with existing HR/payroll/crew systems ensures data consistency.',
-          badge: 'Automation',
+          badge: 'Integration',
+        },
+      ],
+    },
+    poc: {
+      title: 'JSM PoC',
+      highlight: 'Verified Results',
+      cards: [
+        {
+          title: '80% Faster Document Processing',
+          description: 'Input time: 6 hours → 1.2 hours',
+        },
+        {
+          title: '90% Reduction in Rejections',
+          description: 'Eliminating errors blocks deployment delays',
+        },
+        {
+          title: 'Save Cost of 9 Staff',
+          description: 'Dedicated entry staff replaced by automation',
         },
       ],
     },
     howItWorks: {
-      subtitle: 'Automation • Accuracy • Cost Efficiency • Strategic Focus',
-      title: 'From Upload to Submission',
-      highlight: 'in 4 Simple Steps',
-      description: 'Reduce manual work, eliminate errors, and let your team focus on strategic tasks.',
+      subtitle: 'One upload completes all seafarer document tasks',
+      title: 'SeaDocs\' 4-Step',
+      highlight: 'Automated Workflow',
+      description: 'Automatic document recognition, verification, and organization handle everything from input to document generation in one go.',
       steps: [
         {
           title: 'Upload Documents',
-          description: 'Start with simple drag & drop.',
-          badge: 'Automation',
+          description: 'Just drag and drop files',
+          badge: '01',
         },
         {
-          title: 'AI Auto-Extraction',
-          description: 'OCR, field mapping, and standardization happen instantly.',
-          badge: 'Accuracy',
+          title: 'AI Auto-Extraction & Verification',
+          description: 'Extract key info and verify compliance',
+          badge: '02',
         },
         {
-          title: 'Compliance Verification',
-          description: 'Real-time validation against national and company requirements.',
-          badge: 'Compliance',
+          title: 'Generate Documents',
+          description: 'Auto-generate final documents/forms',
+          badge: '03',
         },
         {
-          title: 'Submit & Export',
-          description: 'One-click PDF/form generation and submission.',
-          badge: 'Delivery',
+          title: 'Expiration Management',
+          description: 'Renewal alerts and tracking',
+          badge: '04',
         },
       ],
     },
     testimonials: {
-      title: 'Customer',
-      subtitle: 'Stories',
-      description: 'Experience immediate time savings, error reduction, and instant ROI from day one.',
+      title: 'Authority & Trust:',
+      subtitle: 'Government Research & International Standards Compliance',
+      description: '',
       cards: [
         {
-          quote: 'Document processing time dropped from 6 hours to 30 minutes. The ROI was immediate.',
-          author: 'Michael Chen',
-          role: 'Operations Manager',
-          company: 'Pacific Maritime Services',
+          quote: 'SeaDocs is a trusted solution verified by government agencies including the Ministry of SMEs and Startups, Korea Internet & Security Agency, and Personal Information Protection Commission.',
+          author: '',
+          role: 'Government Certification',
+          company: 'Ministry of SMEs · KISA · PIPC',
         },
         {
-          quote: 'A solution that truly understands maritime regulations. Automatic validation completely prevented submission errors.',
-          author: 'Sarah Williams',
-          role: 'Crew Management Director',
-          company: 'Global Fleet Management',
+          quote: 'Compliant with IMMAJ international standards, ensuring perfect alignment with global maritime regulations and safe, compliant document processing.',
+          author: '',
+          role: 'International Standards',
+          company: 'IMMAJ Compliance',
         },
       ],
       stats: [
@@ -281,11 +320,14 @@ export const translations = {
       ],
     },
     cta: {
-      badge: 'Start Innovation',
-      title: 'Be the First to',
-      highlight: 'Transform Your Workflow',
-      description: 'Early access includes custom onboarding, priority support, and lifetime discount benefits.',
-      button: 'Request Early Access',
+      badge: '',
+      title: 'It\'s Time to',
+      highlight: 'Start Automation',
+      description: 'Stop manual data entry and start automation. Test with real documents and see perfect results without any input.',
+      buttons: {
+        primary: 'Request Early Access',
+        demo: 'Request Demo',
+      },
       limited: 'Limited Spots for Q4 2025',
     },
     footer: {
@@ -333,7 +375,7 @@ export const translations = {
       description: '複雑な手入力作業を自動化し、人為的なミスを排除。業務の運用効率を極限まで高めます。',
       cta: {
         primary: 'アーリーアクセス申請',
-        demo: '2分デモ視聴',
+        demo: 'デモ申請',
       },
       stats: {
         savings: 'コスト・時間削減',
@@ -370,9 +412,9 @@ export const translations = {
       description: '手作業を自動化し、エラーを排除し、チームが戦略業務に集中できるよう設計されています。',
       cards: [
         {
-          title: '法令遵守予測',
-          description: '承認・コンプライアンスリスクを事前検知し、却下を防止します。',
-          badge: '正確性',
+          title: 'AI自動抽出及び検証',
+          description: 'OCRとLLM基盤で船員書類の核心情報を抽出し、規定準拠可否を自動検証します。',
+          badge: 'AI',
         },
         {
           title: 'グローバル要件対応',
@@ -387,54 +429,72 @@ export const translations = {
         {
           title: 'リアルタイム同期',
           description: '既存のHR/給与/船員管理システムと双方向統合し、データ整合性を保証します。',
-          badge: '自動化',
+          badge: '統合',
+        },
+      ],
+    },
+    poc: {
+      title: 'JSM PoC',
+      highlight: '検証済み結果',
+      cards: [
+        {
+          title: '文書処理速度80%向上',
+          description: '入力時間 6時間 → 1.2時間',
+        },
+        {
+          title: '提出却下率90%減少',
+          description: 'エラー排除で配置遅延を遮断',
+        },
+        {
+          title: '9名分の人件費削減',
+          description: '入力専任人員を自動化で代替',
         },
       ],
     },
     howItWorks: {
-      subtitle: '自動化 • 正確性 • コスト効率 • 戦略的焦点',
-      title: 'アップロードから提出まで',
-      highlight: '4つのステップで自動化',
-      description: '手作業を削減し、エラーを排除し、チームが戦略業務に集中できるよう設計されています。',
+      subtitle: '一度のアップロードで船員書類業務が完了します',
+      title: 'SeaDocsの4段階',
+      highlight: '自動化ワークフロー',
+      description: '書類自動認識、検証、整理機能により入力から文書生成までの全プロセスを一括処理します。',
       steps: [
         {
           title: '書類アップロード',
-          description: 'ドラッグ&ドロップで開始。',
-          badge: '自動化',
+          description: 'ファイルをドラッグ&ドロップ',
+          badge: '01',
         },
         {
-          title: 'AI自動抽出',
-          description: 'OCR・フィールドマッピング・標準化を即座に処理します。',
-          badge: '正確性',
+          title: 'AI自動抽出及び検証',
+          description: '核心情報抽出及び規定準拠確認',
+          badge: '02',
         },
         {
-          title: '法令遵守検証',
-          description: '国家・船社要件をリアルタイム検査します。',
-          badge: 'コンプライアンス',
+          title: '文書生成',
+          description: '最終文書/書式を自動生成',
+          badge: '03',
         },
         {
-          title: '提出・エクスポート',
-          description: 'ワンクリックでPDF/書式生成と送信を実行します。',
-          badge: '配信',
+          title: '期限管理',
+          description: '更新アラートと追跡',
+          badge: '04',
         },
       ],
     },
     testimonials: {
-      title: 'お客様の',
-      subtitle: '声',
-      description: '導入初日から実感する時間削減、エラー減少、そして即座のROIを確認してください。',
+      title: '権威と信頼:',
+      subtitle: '政府機関研究及び国際標準準拠',
+      description: '',
       cards: [
         {
-          quote: '書類処理時間が6時間から30分に短縮されました。投資対効果は即座に現れました。',
-          author: '田中健太',
-          role: '運用マネージャー',
-          company: '日本海運サービス',
+          quote: 'SeaDocsは中小ベンチャー企業部・韓国インターネット振興院・個人情報保護委員会など政府機関の検証を経た信頼できるソリューションです。',
+          author: '',
+          role: '政府機関認証',
+          company: '中小ベンチャー企業部 · KISA · PIPC',
         },
         {
-          quote: '海運規制を完璧に理解したソリューションです。自動検証で提出ミスを完全に防止できました。',
-          author: '佐藤美咲',
-          role: '船員管理責任者',
-          company: 'パシフィック艦隊管理',
+          quote: 'IMMAJ国際標準に準拠し、グローバル海運規制に完璧に対応。安全で規定に適合した文書処理を保証します。',
+          author: '',
+          role: '国際標準準拠',
+          company: 'IMMAJ Compliance',
         },
       ],
       stats: [
@@ -444,11 +504,14 @@ export const translations = {
       ],
     },
     cta: {
-      badge: 'イノベーションの始まり',
-      title: '文書ワークフローを革新する',
-      highlight: '最初の企業になりませんか',
-      description: 'アーリーアクセス申請で、カスタムオンボーディング、優先サポート、生涯割引特典を提供します。',
-      button: 'アーリーアクセス申請',
+      badge: '',
+      title: '自動化を',
+      highlight: '始める時です',
+      description: '手入力を止めて、自動化を開始しましょう。実際の文書でテストし、入力なしでも完璧な結果を直接確認してください。',
+      buttons: {
+        primary: 'アーリーアクセス申請',
+        demo: 'デモ申請',
+      },
       limited: '2025年第4四半期限定枠',
     },
     footer: {

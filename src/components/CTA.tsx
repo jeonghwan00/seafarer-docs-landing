@@ -64,7 +64,7 @@ export default function CTA() {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
             >
-              <span className="relative z-10">{t.cta.button}</span>
+              <span className="relative z-10">{t.cta.buttons.primary}</span>
               <ArrowRight
                 className="relative z-10 w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform"
                 aria-hidden="true"
@@ -83,7 +83,7 @@ export default function CTA() {
               href="#book-demo"
               className="px-8 md:px-10 py-4 md:py-5 bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 text-white rounded-2xl font-semibold text-lg md:text-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
             >
-              {t.cta.demo || '데모 문의'}
+              {t.cta.buttons.demo}
             </a>
           </div>
 
