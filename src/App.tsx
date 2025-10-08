@@ -1,4 +1,3 @@
-import { useSmoothScroll } from './hooks/useSmoothScroll';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Hero from './components/Hero';
 import Problem from './components/Problem';
@@ -11,11 +10,9 @@ import Footer from './components/Footer';
 import LanguageSwitcher from './components/LanguageSwitcher';
 
 function App() {
-  useSmoothScroll();
-
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-[#0B1220] overflow-x-hidden">
+      <div className="min-h-screen bg-white overflow-x-hidden">
         <LanguageSwitcher />
         <Hero />
         <Problem />

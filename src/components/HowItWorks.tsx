@@ -9,7 +9,7 @@ export default function HowItWorks() {
 
   return (
     <section
-      className="relative py-24 md:py-32 px-6"
+      className="relative py-24 md:py-32 px-6 bg-white"
       aria-labelledby="how-heading"
     >
       <div className="max-w-7xl mx-auto">
@@ -21,20 +21,20 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-xs tracking-widest uppercase text-white/50 mb-3">
+          <p className="text-xs tracking-widest uppercase text-gray-500 mb-3">
             {t.howItWorks.subtitle}
           </p>
           <h2
             id="how-heading"
-            className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
+            className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight"
           >
             {t.howItWorks.title}
             <br className="md:hidden" />
-            <span className="md:ml-2 bg-gradient-to-r from-[#1BBE7C] to-[#15a068] bg-clip-text text-transparent">
+            <span className="md:ml-2 bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
               {t.howItWorks.highlight}
             </span>
           </h2>
-          <p className="text-base md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             {t.howItWorks.description}
           </p>
         </motion.div>
@@ -54,10 +54,10 @@ export default function HowItWorks() {
                 transition={{ duration: 0.6, delay: index * 0.12 }}
                 className="relative"
               >
-                <div className="flex items-start gap-5 md:gap-6 p-5 md:p-6 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 hover:bg-white/10 transition-colors duration-300">
+                <div className="flex items-start gap-5 md:gap-6 p-5 md:p-6 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
                   {/* Icon */}
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-[#1BBE7C] to-[#15a068] flex items-center justify-center">
+                    <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center">
                       <Icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
                     </div>
                   </div>
@@ -65,17 +65,17 @@ export default function HowItWorks() {
                   {/* Copy */}
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1.5 md:mb-2">
-                      <span className="text-[11px] md:text-xs font-mono text-[#1BBE7C]">
+                      <span className="text-[11px] md:text-xs font-mono text-blue-600">
                         0{index + 1}
                       </span>
-                      <h3 className="text-xl md:text-2xl font-bold text-white">
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900">
                         {step.title}
                       </h3>
-                      <span className="ml-auto hidden sm:inline text-[10px] md:text-xs px-2.5 py-1 rounded-full border border-white/10 text-white/60">
+                      <span className="ml-auto hidden sm:inline text-[10px] md:text-xs px-2.5 py-1 rounded-full border border-gray-200 text-gray-600">
                         {step.badge}
                       </span>
                     </div>
-                    <p className="text-sm md:text-lg text-white/60 leading-relaxed">
+                    <p className="text-sm md:text-lg text-gray-600 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -84,7 +84,7 @@ export default function HowItWorks() {
                 {/* Vertical connector */}
                 {index < t.howItWorks.steps.length - 1 && (
                   <div
-                    className="absolute left-[1.75rem] md:left-[2rem] top-full h-8 w-px bg-gradient-to-b from-[#1BBE7C]/50 to-transparent"
+                    className="absolute left-[1.75rem] md:left-[2rem] top-full h-8 w-px bg-gradient-to-b from-blue-600/50 to-transparent"
                     aria-hidden="true"
                   />
                 )}

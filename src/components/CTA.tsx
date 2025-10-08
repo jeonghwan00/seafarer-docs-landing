@@ -7,11 +7,11 @@ export default function CTA() {
   return (
     <section
       className="relative py-24 md:py-32 px-6 overflow-hidden"
+      style={{
+        background: 'linear-gradient(to bottom, #2563EB, #1D4ED8)',
+      }}
       aria-labelledby="cta-heading"
     >
-      {/* Gradient backdrop */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1BBE7C]/20 via-[#0B1220] to-[#1BBE7C]/10" />
-
       {/* Soft animated glow */}
       <motion.div
         className="absolute inset-0"
@@ -19,7 +19,7 @@ export default function CTA() {
         transition={{ duration: 20, repeat: Infinity, repeatType: 'reverse' }}
         style={{
           backgroundImage:
-            'radial-gradient(circle at center, rgba(27,190,124,0.12) 0%, transparent 50%)',
+            'radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, transparent 50%)',
           backgroundSize: '50% 50%',
         }}
       />
@@ -32,9 +32,9 @@ export default function CTA() {
           transition={{ duration: 0.8 }}
         >
           {/* Pill */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 md:mb-8 rounded-full bg-white/5 backdrop-blur-xl border border-white/10">
-            <Sparkles className="w-4 h-4 text-[#1BBE7C]" aria-hidden="true" />
-            <span className="text-xs md:text-sm text-white/80">
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 md:mb-8 rounded-full bg-white/20 backdrop-blur-xl border border-white/30">
+            <Sparkles className="w-4 h-4 text-white" aria-hidden="true" />
+            <span className="text-xs md:text-sm text-white">
               {t.cta.badge}
             </span>
           </div>
@@ -46,13 +46,13 @@ export default function CTA() {
           >
             {t.cta.title}
             <br />
-            <span className="bg-gradient-to-r from-[#1BBE7C] to-[#15a068] bg-clip-text text-transparent">
+            <span className="text-white/95">
               {t.cta.highlight}
             </span>
           </h2>
 
           {/* Subcopy */}
-          <p className="text-lg md:text-2xl text-white/60 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-2xl text-white/90 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed">
             {t.cta.description}
           </p>
 
@@ -60,7 +60,7 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a
               href="#request-access"
-              className="group relative px-8 md:px-10 py-4 md:py-5 bg-[#1BBE7C] text-white rounded-2xl font-semibold text-lg md:text-xl flex items-center gap-2 md:gap-3 overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1BBE7C]/70"
+              className="group relative px-8 md:px-10 py-4 md:py-5 bg-white text-blue-600 rounded-2xl font-semibold text-lg md:text-xl flex items-center gap-2 md:gap-3 overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 hover:bg-white/95 transition-colors"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -69,19 +69,11 @@ export default function CTA() {
                 className="relative z-10 w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform"
                 aria-hidden="true"
               />
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-[#1BBE7C] to-[#15a068]"
-                initial={{ x: '-100%' }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.3 }}
-                aria-hidden="true"
-              />
-              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
             </motion.a>
 
             <a
               href="#book-demo"
-              className="px-8 md:px-10 py-4 md:py-5 bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/10 text-white rounded-2xl font-semibold text-lg md:text-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+              className="px-8 md:px-10 py-4 md:py-5 bg-white/10 hover:bg-white/20 backdrop-blur-xl border border-white/30 text-white rounded-2xl font-semibold text-lg md:text-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
             >
               {t.cta.buttons.demo}
             </a>
@@ -89,19 +81,19 @@ export default function CTA() {
 
           {/* Availability badge */}
           <motion.div
-            className="mt-6 md:mt-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-xl border border-[#1BBE7C]/30"
+            className="mt-6 md:mt-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-xl border border-white/30"
             animate={{
               boxShadow: [
-                '0 0 0 0 rgba(27,190,124,0)',
-                '0 0 0 8px rgba(27,190,124,0.08)',
-                '0 0 0 0 rgba(27,190,124,0)',
+                '0 0 0 0 rgba(255,255,255,0)',
+                '0 0 0 8px rgba(255,255,255,0.15)',
+                '0 0 0 0 rgba(255,255,255,0)',
               ],
             }}
             transition={{ duration: 2, repeat: Infinity }}
             aria-live="polite"
           >
-            <div className="w-2 h-2 rounded-full bg-[#1BBE7C] animate-pulse" aria-hidden="true" />
-            <span className="text-xs md:text-sm text-white/80">
+            <div className="w-2 h-2 rounded-full bg-white animate-pulse" aria-hidden="true" />
+            <span className="text-xs md:text-sm text-white">
               {t.cta.limited}
             </span>
           </motion.div>
@@ -109,8 +101,8 @@ export default function CTA() {
       </div>
 
       {/* Peripheral glows */}
-      <div className="absolute -bottom-40 -left-40 w-80 md:w-96 h-80 md:h-96 rounded-full bg-[#1BBE7C]/20 blur-3xl" aria-hidden="true" />
-      <div className="absolute -top-40 -right-40 w-80 md:w-96 h-80 md:h-96 rounded-full bg-[#1BBE7C]/20 blur-3xl" aria-hidden="true" />
+      <div className="absolute -bottom-40 -left-40 w-80 md:w-96 h-80 md:h-96 rounded-full bg-white/10 blur-3xl" aria-hidden="true" />
+      <div className="absolute -top-40 -right-40 w-80 md:w-96 h-80 md:h-96 rounded-full bg-white/10 blur-3xl" aria-hidden="true" />
     </section>
   );
 }
