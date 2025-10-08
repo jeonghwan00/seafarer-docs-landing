@@ -31,7 +31,7 @@ export const translations = {
           impact: '비용 증가',
         },
         {
-          title: '휴먼 에러로 인한 송출 지연',
+          title: '입력 실수로 인한 송출 지연',
           description: '손글씨 입력 실수는 선원 송출 전체 프로세스를 지연시키고 리스크를 키웁니다.',
           impact: '프로세스 지연',
         },
